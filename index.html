@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Nimit Institute</title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <!-- Navbar content -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Nimit Institute</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- d-sm-none   d-md-block -->
+    <!-- Container -->
+    <nav class="navbar navbar-light bg-light d-block d-md-none">
+        <button class="navbar-toggler" onclick="show()" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <span class="navbar-text mx-4" id="searchContent">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Lecture" aria-label="Search">
+            </form>
+        </span>
+    </nav>
+
+    <script>
+        function show(){
+            let content = document.getElementById("navbarToggleExternalContent");
+            if(content.className == "col-md-3 mb-md-0 p-md-4 d-lg-block d-md-block d-none collapse"){
+                content.classList.add('d-block');
+                content.classList.remove('d-none');
+            }
+            else{
+                content.classList.add('d-none');
+                content.classList.remove('d-block');
+            }
+        }
+        
+    </script>
+    <div class="row no-gutters bg-light position-relative">
+        <div class="col-md-3 mb-md-0 p-md-4 d-lg-block d-md-block d-none collapse" id="navbarToggleExternalContent">
+            <!-- <img src="images/1.jpg" class="w-100" alt="..."> -->
+            
+            <span class="navbar-text mx-4 d-lg-block d-md-block d-none"  id="searchInContent">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search Lecture" aria-label="Search">
+                </form>
+            </span>
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" href="Videos/Excel/index.html">Excel Video</a>
+                <a class="nav-link" id="v-pills-profile-tab" href="#v-pills-profile">Profile</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                    aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                    aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+            </div>
+        </div>
+        <div class="col-md-9 position-static p-4 pl-md-0">
+            <div class="content" id="area">
+                <div class="card" id="first">
+                    <h5 class="card-header">Lecture</h5>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="images/1.jpg" class="card-img-top" alt="This is a video player">
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#source-code">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#comment">Comment | Q/A</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Anouncements">Anouncements</a>
+                    </li>
+                </ul>
+
+                <div class=" card" id="source-code">
+                    <h5 class="card-header">Practice notes</h5>
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
+                </div>
+                
+                <div class=" card" id="Anouncements">
+                    <h5 class="card-header">Anouncements Topic</h5>
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
+                </div>
+
+                <div id="comment">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Comment Author</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional
+                                content.</p>
+                                <a href="#" class="btn btn-primary">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        
+        <!-- <script src="js/add editable Div.js"></script> -->
+        <script src="js/ajax.js"></script>
+    </body>
+    
+    </html>
